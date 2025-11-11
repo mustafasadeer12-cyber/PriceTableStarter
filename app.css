@@ -122,12 +122,13 @@ body {
   body {
     padding: 0;
   }
+  
 }
 
 .pricing-img {
-  width: 100%;                 
+  width: 75%;                 
   max-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   
 }
 
