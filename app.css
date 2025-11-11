@@ -76,6 +76,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: #60a9ff;
+  padding: 20px 25px
   
 }
 
@@ -98,6 +99,7 @@ body {
   .panel {
     flex-direction: row;
     padding: 3px;
+    
   }
   .pricing-plan{
     border-bottom: none;
@@ -117,6 +119,9 @@ body {
     border-right: none;
   }
 
+  body {
+    padding: 0;
+  }
 }
 
 .pricing-img {
