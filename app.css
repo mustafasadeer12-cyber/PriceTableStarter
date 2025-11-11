@@ -1,0 +1,190 @@
+/* ============================================
+   CSS RESET
+   Based on Colt Steele's lecture
+   ============================================ */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+/* Set font and box-sizing on HTML element */
+
+html {
+  font-family: 'Space Grotesk', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #60a9ff;
+  padding: 20px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 960px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (min-width:900px) {
+  .panel {
+    flex-direction: row;
+  }
+  .pricing-plan{
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+    
+    
+  }
+  .pricing-features {
+    border-right: 1px solid #e1f1ff;
+    
+  }
+  .pricing-features-item:last-child {
+    border: none;
+  }
+  .pricing-plan:last-child {
+    border-right: none;
+  }
+
+}
+
+.pricing-img {
+  width: 100%;                 
+  max-width: 100%;
+  margin-bottom: 15px;
+  
+}
+
+.pricing-header {
+  margin-bottom: 2px;
+  letter-spacing: 1.5px;
+  color: grey;
+ font-weight: 700;
+  padding: 25px 15px;
+  
+}
+
+.pricing-features {
+ margin: 50px 0 25px;
+  letter-spacing: 1px;
+    font-size: 12px;
+  font-weight: 600;
+  border-top: 1px solid #e1f1ff;
+}
+
+.pricing-features-item {
+   border-bottom: 1px solid #e1f1ff;
+  padding: 25px 0px;
+    line-height: 1.7;
+}
+
+.pricing-features-item:last-child {
+  border-bottom: none;
+  
+}
+
+.pricing-price {
+  display: block;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+  line-height: 1.6;
+  border-top: 1px solid #e1f1ff;
+  padding: 20px 0px;
+  font-size: 40px;
+  font-weight: 700;
+  color:#016ff9;
+}
+
+.pricing-button {
+  font-weight:600;
+  letter-spacing:1px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 35px;
+  border: 1px solid #348efe;
+    border-radius: 10px;
+  transition: background-color: 200ms ease-in-out;
+}
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+  background-color: #269aff;
+}
